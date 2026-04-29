@@ -119,8 +119,13 @@ nav a:hover {
 section {
   max-width: 800px;
   margin: auto;
-  padding: 10px 10px 10px; /* ← fixed spacing */
+  padding: 10px 20px 60px;
   text-align: center;
+  display: flow-root; /* ← modern fix for margin collapse */
+}
+
+section h2 {
+  margin-top: 0;
 }
 
 /* =========================
