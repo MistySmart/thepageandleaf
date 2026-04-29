@@ -75,18 +75,13 @@ h4 {
    
 header.primary {
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(107, 122, 90, 0.35);
 }
 
 header.primary img {
   width: 120px;
   margin-bottom: 15px;
-}
-
-header.primary {
-  text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid rgba(107, 122, 90, 0.2); /* soft sage line */
 }
 
 /* =========================
