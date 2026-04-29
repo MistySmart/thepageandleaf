@@ -87,10 +87,14 @@ header.primary img {
    NAVIGATION
    ========================= */
 
+nav {
+  margin-bottom: 10px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   display: flex;
   justify-content: center;
   gap: 25px;
