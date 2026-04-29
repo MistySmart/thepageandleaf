@@ -178,3 +178,26 @@ footer a {
   color: var(--sage);
   text-decoration: none;
 }
+
+/* =========================
+   CUSTOM BULLETS
+   ========================= */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+ul li::before {
+  content: "❧";
+  position: absolute;
+  left: 0;
+  color: var(--sage);
+  font-size: 0.9rem;
+}
