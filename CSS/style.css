@@ -83,6 +83,12 @@ header.primary img {
   margin-bottom: 15px;
 }
 
+header.primary {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(107, 122, 90, 0.2); /* soft sage line */
+}
+
 /* =========================
    NAVIGATION
    ========================= */
@@ -117,11 +123,6 @@ nav a:hover {
   color: var(--sage);
 }
 
-header.primary {
-  text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid rgba(107, 122, 90, 0.2); /* soft sage line */
-}
 /* =========================
    SECTIONS (FIXED SPACING)
    ========================= */
