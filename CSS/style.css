@@ -38,19 +38,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.2rem; }
 
-h2 {
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-/* Elegant label-style heading */
 h4 {
   font-size: 0.85rem;
   font-family: var(--font-body);
@@ -61,7 +52,6 @@ h4 {
   margin-bottom: 10px;
 }
 
-/* Tagline */
 .tagline {
   font-family: var(--font-accent);
   font-style: italic;
@@ -120,7 +110,7 @@ section {
 }
 
 /* =========================
-   CARD / FORM CONTAINER
+   CARD
    ========================= */
 
 .card {
@@ -187,18 +177,18 @@ footer a {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 500px; /* keeps list centered nicely */
+  max-width: 500px;
   text-align: left;
 }
 
 .styled-list li {
+  list-style: none; /* ensures default bullets are gone */
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0;
 }
 
-/* Leaf icon */
 .styled-list li::before {
   content: "";
   display: inline-block;
@@ -206,7 +196,7 @@ footer a {
   height: 14px;
   flex-shrink: 0;
 
-  background-image: url(../Images/tealeafbullet.png);
+  background-image: url("../Images/tealeafbullet.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
