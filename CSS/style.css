@@ -72,11 +72,7 @@ h4 {
 /* =========================
    HEADER
    ========================= */
-
-   header.primary img {
-  outline: 2px solid red;
-}
-
+   
 header.primary {
   text-align: center;
   padding: 20px 20px 20px;
@@ -103,6 +99,12 @@ nav ul {
   justify-content: center;
   gap: 25px;
 }
+
+nav ul.styled-list {
+  margin: 10px 0; /* Override .styled-list margin for nav only */
+  max-width: none;
+}
+
 
 nav a {
   text-decoration: none;
