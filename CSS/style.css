@@ -180,24 +180,34 @@ footer a {
 }
 
 /* =========================
-   CUSTOM BULLETS
+   TEA LEAF BULLETS
    ========================= */
 
-ul {
+.styled-list {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+  max-width: 500px; /* keeps list centered nicely */
+  text-align: left;
 }
 
-ul li {
-  position: relative;
-  padding-left: 20px;
+.styled-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 10px 0;
 }
 
-ul li::before {
-  content: "❧";
-  position: absolute;
-  left: 0;
-  color: var(--sage);
-  font-size: 0.9rem;
+/* Leaf icon */
+.styled-list li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+
+  background-image: url(../Images/tea\ leaf\ bullet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
