@@ -75,7 +75,7 @@ h4 {
 
 header.primary {
   text-align: center;
-  padding: 60px 20px 30px;
+  padding: 20px 20px 20px;
 }
 
 header.primary img {
@@ -168,7 +168,7 @@ button:hover,
 
 footer {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   font-size: 0.85rem;
   color: var(--sage);
   border-top: 1px solid #e6e1d9;
@@ -206,7 +206,7 @@ footer a {
   height: 14px;
   flex-shrink: 0;
 
-  background-image: url("../Images/tealeafbullet.png");
+  background-image: url("/Images/tealeafbullet.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
