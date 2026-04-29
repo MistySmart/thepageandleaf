@@ -1,0 +1,180 @@
+/* =========================
+   THE PAGE & LEAF STYLES
+   ========================= */
+
+/* COLORS + FONTS */
+:root {
+  --ink: #3C382C;
+  --sage: #6B7A5A;
+  --eucalyptus: #A3B18A;
+  --parchment: #F2E9DA;
+  --background: #F6F3EE;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Lora', serif;
+}
+
+/* =========================
+   BASE
+   ========================= */
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* Elegant label-style heading */
+h4 {
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--sage);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Tagline */
+.tagline {
+  font-family: var(--font-accent);
+  font-style: italic;
+  color: var(--sage);
+  margin-top: 8px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header.primary {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+header.primary img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--sage);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* =========================
+   CARD / FORM CONTAINER
+   ========================= */
+
+.card {
+  background-color: var(--parchment);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button,
+.button {
+  font-family: var(--font-body);
+  border: 1px solid var(--sage);
+  background: none;
+  color: var(--sage);
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--sage);
+  color: white;
+}
+
+/* =========================
+   DIVIDER
+   ========================= */
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background-color: var(--eucalyptus);
+  margin: 20px auto;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.85rem;
+  color: var(--sage);
+  border-top: 1px solid #e6e1d9;
+}
+
+footer a {
+  color: var(--sage);
+  text-decoration: none;
+}
