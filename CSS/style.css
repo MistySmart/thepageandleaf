@@ -39,9 +39,18 @@ h1, h2, h3 {
 }
 
 h1 { font-size: 2.5rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.2rem; }
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px; /* spacing fix */
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px; /* spacing fix */
+}
+
+/* Elegant label-style heading */
 h4 {
   font-size: 0.85rem;
   font-family: var(--font-body);
@@ -52,6 +61,7 @@ h4 {
   margin-bottom: 10px;
 }
 
+/* Tagline */
 .tagline {
   font-family: var(--font-accent);
   font-style: italic;
@@ -99,13 +109,13 @@ nav a:hover {
 }
 
 /* =========================
-   SECTIONS
+   SECTIONS (FIXED SPACING)
    ========================= */
 
 section {
   max-width: 800px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 10px 10px 10px; /* ← fixed spacing */
   text-align: center;
 }
 
@@ -176,13 +186,13 @@ footer a {
 .styled-list {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 20px auto 40px; /* ← spacing fix */
   max-width: 500px;
   text-align: left;
 }
 
 .styled-list li {
-  list-style: none; /* ensures default bullets are gone */
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -200,4 +210,8 @@ footer a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#primaryShopContent {
+  padding: 10px 20px 60px;
 }
